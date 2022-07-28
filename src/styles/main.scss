@@ -1,0 +1,200 @@
+// first section
+
+.call-to-action-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: #424B54;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    box-sizing: border-box;
+
+    @media (max-width: 1060px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    p {
+        width: 500px;
+        font-size: 26px;
+        line-height: 33px;
+        text-align: left;
+
+        @media (max-width: 1060px) {
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+
+    .button {
+        background: #B700DB;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        padding: 16px 38px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+//lista de medicamentos
+
+.first-section-wrapper {
+    background: #F8F8F8;
+
+    .table-container {
+        width: 60%;
+        margin: auto;
+        padding: 50px 0 100px;
+
+        @media (max-width: 1060px) {
+            padding: 50px 10px;
+            width: 95%;
+            box-sizing: border-box;
+        }
+        
+    }
+
+    h2 {
+        color: #424B54;
+    }
+
+    h3 {
+        color: #424B54;
+        text-align: left;
+    }
+
+    table {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        border-collapse: collapse;
+
+        thead {
+            background: #F8F8F8;
+            color: #424B54;
+
+            tr {
+                border-bottom: 1px solid #D7D7D7;
+                border-top: 1px solid #D7D7D7;
+                th {
+                    padding: 16px;
+                    font-weight: normal;
+
+                    span {
+                        color: #7C7C7C;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            background: white;
+            color: #7C7C7C;
+
+            tr {
+                .brand-cell {
+                    text-transform: uppercase;
+                }
+
+                td {
+                    padding: 16px;
+                    border-bottom: 1px solid #D7D7D7;
+                }
+            }
+        }
+    }
+}
+
+
+//preguntas frecuentes
+
+.second-section-wrapper {
+    padding: 100px 0;
+
+    h2 {
+        color: #424B54;
+    }
+
+    .Collapsible {
+        width: 60%;
+        margin: auto;
+        text-align: left;
+        border-bottom: 1px solid #D6D6D6;
+        
+        p {
+            color: #424B54;
+            font-size: 20px;
+        }
+
+        .collapsible-description {
+            color: #7C7C7C;
+            font-size: 16px;
+        }
+
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+    }
+
+    .header-collapsible {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+// footer
+
+footer {
+    background: #727D89;
+    color: white;
+
+    .footer-container {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 50px;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+
+        .logo-footer-wrapper {
+            text-align: left;
+
+            @media (max-width: 800px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .social-wrapper {
+            p {
+                margin-bottom: 32px;
+                margin-top: 0;
+            }
+            ul {
+                display: flex;
+
+                @media (max-width: 800px) {
+                    justify-content: center;
+                    padding: 0;
+                }
+        
+                li {
+                    list-style: none;
+                    margin-right: 32px;
+
+                    @media (max-width: 500px) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

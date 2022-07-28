@@ -1,0 +1,119 @@
+.header {
+    background-image: url("../assets/background2.svg");
+    background-size: cover;
+    height: 458px;
+    width: 100%;
+    padding-top: 28px;
+
+    h1{
+        background-image: url("../assets/choiz-logo.svg");
+        background-repeat: no-repeat;
+        height: 46px;
+        width: 120px;
+        text-indent: -205px;
+        overflow: hidden;
+        margin: 0;
+
+        @media (max-width: 1060px) {
+            margin-left: 24px;
+        }
+    }
+
+    h2 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        font-weight: 100;
+        margin: 0;
+        width: 700px;
+        text-align: left;
+        margin-top: 140px;
+
+        @media (max-width: 1060px) {
+            width: 80%;
+            font-size: 50px;
+            text-align: center;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .menu-desktop {
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+
+            @media (max-width: 1060px) {
+                display: none;
+            }
+
+            li {
+                list-style: none;
+                margin-right: 24px;
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .menu-item-button {
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid #FFFFFF;
+                border-radius: 4px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .menu-mobile {
+        display: none;
+
+        @media (max-width: 1060px) {
+            display: block;
+            cursor: pointer;
+            margin-right: 24px;
+        }
+
+        width: 30px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.container-header {
+    width: 85%;
+    margin: auto;
+    position: relative;
+    height: 458px;
+
+    @media (max-width: 1060px) {
+        width: 100%;
+    }
+}
+
+.wrapper-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 800px) {
+        width: 137px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}

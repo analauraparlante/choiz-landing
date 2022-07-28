@@ -1,0 +1,120 @@
+// modal
+
+.wrapper-modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 800px) {
+        overflow: scroll;
+    }
+}
+
+.content-modal {
+    position: relative;
+    padding: 24px;
+}
+
+.modal {
+    background-color: #FEE5F8;
+    width: 70%;
+    margin: auto;
+    border-radius: 90px;
+    padding: 110px;
+    position: relative;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    h2 {
+        color: #424B54;
+        margin: 0;
+        margin-bottom: 70px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+
+        @media (max-width: 500px) {
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .items-wrapper {
+        display: flex;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+
+        .item-container {
+            width: 250px;
+
+            @media (max-width: 800px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .divisor {
+            height: 1px;
+            width: 215px;
+            background-color: #C4C4C4;
+            margin-top: 50px;
+
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+
+        .modal-item-image {
+            min-height: 92px;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+
+        h3 {
+            color: #B700DB;
+        }
+
+        .first-p {
+            color: #424B54;
+            font-size: 20px;
+        }
+
+        .second-p {
+            color: #7C7C7C;
+            font-size: 18px;
+        }
+
+        .third-p {
+            color: #7C7C7C;
+            font-size: 14px;
+        }
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 53px;
+        right: 87px;
+        cursor: pointer;
+
+        @media (max-width: 800px) {
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
